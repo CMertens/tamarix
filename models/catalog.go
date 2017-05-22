@@ -17,7 +17,7 @@ type Category struct {
 }
 
 type ProductProperty struct {
-	ID          string   `json:"id"`
+	ID          string   `json:"id" col:"productproperties.ixProductProperty" coltype:"uuid" pk:"true"`
 	Name        string   `json:"name"`
 	Title       string   `json:"title"`
 	Description string   `json:"description"`
